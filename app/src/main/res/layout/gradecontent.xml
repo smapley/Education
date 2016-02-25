@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/gradecontent_lin1"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_below="@+id/gradecontent_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:stretchColumns="0">
+
+            <TextView
+                android:text="@string/gradecontent_item1"
+                android:padding="10dp" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item2"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item1"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item2"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item4"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item3"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/gradecontent_item5"
+                android:padding="10dp" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item11"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item9"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item10"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item8"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item9"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item7"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item8"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item6"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item7"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item5"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+
+                android:background="@color/gray" />
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/gradecontent_item6"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gradecontent_item4"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TextView
+                android:layout_height="0.5dp"
+                android:padding="@dimen/gradecontent_pad"
+                android:background="@color/gray" />
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

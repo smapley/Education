@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    android:background="@color/white"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/path_lin1"
+        layout="@layout/layout_title" />
+
+    <com.smapley.education.chart.PathView
+        android:layout_below="@+id/path_lin1"
+        android:id="@+id/pv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

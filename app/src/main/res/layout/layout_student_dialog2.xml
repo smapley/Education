@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:stretchColumns="1">
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/student_dialog7"
+                android:textSize="16sp" />
+
+            <EditText android:id="@+id/student_dialog21" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/student_dialog5"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText android:id="@+id/student_dialog22" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/student_dialog6"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <EditText android:id="@+id/student_dialog23" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

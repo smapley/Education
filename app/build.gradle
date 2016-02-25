@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.smapley.education"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 6
+        versionName "1.5"
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/services/com.alibaba.fastjson.parser.deserializer.AutowiredObjectDeserializer'
+        exclude 'META-INF/services/com.alibaba.fastjson.serializer.AutowiredObjectSerializer'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile files('libs/SMSSDK-1.1.9.jar')
+    compile files('libs/fastjson-1.1.22-sources.jar')
+    compile files('libs/fastjson-1.1.22.jar')
+    compile files('libs/achartengine-1.1.0.jar')
+}

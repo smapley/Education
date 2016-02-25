@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/homeworkcontent_lin1"
+        layout="@layout/layout_title" />
+
+    <ListView
+        android:id="@+id/homeworkcontent_list"
+        android:layout_below="@+id/homeworkcontent_lin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</RelativeLayout>

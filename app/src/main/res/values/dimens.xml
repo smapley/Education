@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tag_size">17sp</dimen>
+    <dimen name="login_marginTop">25dp</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+    <dimen name="main_item_height">130dp</dimen>
+    <dimen name="main_item_top">10dp</dimen>
+    <dimen name="address_size">15sp</dimen>
+    <dimen name="gradecontent_pad">5dp</dimen>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/login_lin1"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/login_lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/login_tag">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/login_parents"
+                    android:padding="5dp"
+                    android:text="@string/login_parents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_edge" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:id="@+id/login_teacher"
+                    android:text="@string/login_teacher"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/textview_edge"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/login_student"
+                    android:padding="5dp"
+                    android:text="@string/login_student"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/textview_edge"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="11"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:id="@+id/login_phone"
+                android:hint="@string/login_phone" />
+
+            <Button
+                android:id="@+id/login_send"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:background="@color/bluetitle"
+                android:textColor="@color/white"
+
+                android:text="@string/login_send" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:inputType="number"
+                android:ems="10"
+
+                android:hint="@string/login_key"
+                android:id="@+id/login_key" />
+
+            <Button
+                android:id="@+id/login_testing"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:background="@color/bluetitle"
+                android:textColor="@color/white"
+                android:text="@string/login_testing" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:padding="5dp"
+                android:layout_marginTop="@dimen/login_marginTop"
+                android:gravity="center_horizontal"
+                android:text="@string/login_msg" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

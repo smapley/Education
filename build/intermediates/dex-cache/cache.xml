@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\classes-d6be8572cf0847199c20dfaeefc66aed91ac1219.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-bed257a52d5cc1ccb943009c7e19759351f24ad3.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\classes-3a1f63ad221968f592ac14780323b56839567c5e.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\libs\achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\achartengine-1.1.0-eac316cbae2c470533e66cd5efd72d2056c09187.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\libs\SMSSDK-1.1.9.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="96383506ac3f109eea7f9f11e075347808aa37c3">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\SMSSDK-1.1.9-39bdcda2e6cc2f1c5d70754a1b7b6d4b39d9c977.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\libs\fastjson-1.1.22-sources.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="af1f8831b647891784eacad70013c32872210ee6">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\fastjson-1.1.22-sources-76594850c8f8cf64cfd26a70c4219d1563e1311f.jar" />
+    </item>
+    <item
+        jar="F:\百度云同步盘\Work\Studio\Education\app\libs\fastjson-1.1.22.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1744ecd7f8716ac83381f2b8f5bd002365ccdca9">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\fastjson-1.1.22-c8b7fd57ae4e42f8e633f571c6c1536abef78f57.jar" />
+    </item>
+    <item
+        jar="D:\Program Files (x86)\Android_SDK\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="F:\百度云同步盘\Work\Studio\Education\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-d1bd062f4ce5cbc9490c4fe2e643ddbaa0028626.jar" />
+    </item>
+
+</items>

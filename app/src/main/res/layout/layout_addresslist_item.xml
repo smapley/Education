@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/addresslist_student_name"
+                android:text="小明"
+                android:gravity="right"
+                android:textSize="@dimen/address_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/addresslist_student_phone"
+                android:text="18364985642"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/address_size"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/addresslist_parents_name"
+                android:text="@string/addresslist_par"
+                android:textSize="@dimen/address_size"
+
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/addresslist_parents_phone"
+                android:text="18346589452"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/address_size"
+                android:textColor="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+    </TableLayout>
+
+
+</LinearLayout>

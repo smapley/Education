@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/addnotice_lin1"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_below="@+id/addnotice_lin1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/addnotice_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:hint="@string/addnotice_item1"
+            android:paddingLeft="10dp"
+            android:background="@drawable/textview_edge" />
+
+        <EditText
+            android:id="@+id/addnotice_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/textview_edge"
+            android:hint="@string/addnotice_item2"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</RelativeLayout>

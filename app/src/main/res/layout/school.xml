@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/school_lin1"
+        layout="@layout/layout_title" />
+
+    <TableLayout
+        android:layout_below="@+id/school_lin1"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:stretchColumns="1"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:text="@string/school_item1_hint" />
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/school_item1"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_edge" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="@string/school_item2_hint" />
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/school_item2"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_edge" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:text="@string/school_item3_hint" />
+
+            <EditText
+                android:padding="10dp"
+                android:id="@+id/school_item3"
+                android:paddingLeft="10dp"
+                android:background="@drawable/textview_edge" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

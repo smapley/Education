@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:stretchColumns="0,1,2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/boundphone_teacher_name"
+                android:gravity="center"
+                android:text="@string/login_teacher" />
+
+            <TextView
+                android:id="@+id/boundphone_teacher_phone"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/boundphone_state"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+
+            <TextView
+                android:id="@+id/boundphone_child_name"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/boundphone_child_phone"
+                android:layout_marginLeft="20dp"
+                android:inputType="phone"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:enabled="false"
+                android:background="@drawable/textview_edge" />
+
+            <TextView
+                android:id="@+id/boundphone_save"
+                android:text="@string/boundphone_item2"
+                android:gravity="center" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

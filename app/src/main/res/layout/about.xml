@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/about_lin1"
+        layout="@layout/layout_title" />
+
+    <TableLayout
+        android:layout_below="@+id/about_lin1"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:stretchColumns="0"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                style="@style/about_item"
+                android:text="@string/about_item1" />
+
+            <TextView
+                style="@style/about_items"
+                android:text="@string/about_item1s" />
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/about_item"
+                android:text="@string/about_item2" />
+
+            <TextView
+                style="@style/about_items"
+                android:text="@string/about_item2s" />
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/about_item"
+                android:text="@string/about_item3" />
+
+            <TextView
+                style="@style/about_items"
+                android:text="@string/about_item3s" />
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/about_item"
+                android:text="@string/about_item4" />
+
+            <TextView
+                style="@style/about_items"
+                android:text="@string/about_item4s" />
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray" />
+
+        <TableRow>
+
+            <TextView
+                style="@style/about_item"
+                android:text="@string/about_item5" />
+
+            <TextView
+                style="@style/about_items"
+                android:text="@string/about_item5s" />
+        </TableRow>
+
+        <TextView
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/gray" />
+    </TableLayout>
+
+
+</RelativeLayout>
