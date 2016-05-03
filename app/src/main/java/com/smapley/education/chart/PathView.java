@@ -20,19 +20,19 @@ public class PathView extends View {
     public ArrayList<Float> xPoint = new ArrayList<Float>();
 
 
-    // x,yÖáµÄÏßÌõÊıÁ¿
+    // x,yè½´çš„çº¿æ¡æ•°é‡
     private int xLineCount = 10;
     private int yLineCount = 10;
     private Paint paintLine, paintPoint, textPaint, linkPaint, numPaint;
     private int[] data;
 
-    // ¿¿×ó²à£¬µ×²¿µÄ¾àÀë
+    // é å·¦ä¾§ï¼Œåº•éƒ¨çš„è·ç¦»
     private float left;
     private float bottom;
 
-    // x,yÖáÉÏÏÔÊ¾µÄÖµ
+    // x,yè½´ä¸Šæ˜¾ç¤ºçš„å€¼
     private float xMaxValue, xMinValue;
-    // ¼ä¾à
+    // é—´è·
     private float xInterval, yInterval;
 
     public PathView(Context context, AttributeSet attrs, int defStyle) {
@@ -119,7 +119,7 @@ public class PathView extends View {
     }
 
     /**
-     * »æÖÆÇúÏß
+     * ç»˜åˆ¶æ›²çº¿
      *
      * @param canvas
      */
@@ -141,12 +141,12 @@ public class PathView extends View {
     }
 
     /**
-     * »æÖÆÁ¬¿ò
+     * ç»˜åˆ¶è¿æ¡†
      */
     private void drawFrame(Canvas canvas) {
         calculateLeft();
 
-        // »æÖÆºáÏß
+        // ç»˜åˆ¶æ¨ªçº¿
         for (int i = 0; i <= xLineCount; i++) {
             float startY = i * xInterval + xInterval;
             canvas.drawLine(left + 5, startY, getWidth(), startY, paintLine);

@@ -143,7 +143,7 @@ public class GradeFragment extends Fragment {
                                 textView.setHeight(getActivity().getWindowManager().getDefaultDisplay().getWidth() / 2 - 100);
                                 textView.setBackgroundResource(R.drawable.textview_edge_circle);
 
-                                GridLayout.Spec rowSpec = GridLayout.spec(i);     //ÉèÖÃËüµÄÐÐºÍÁÐ  
+                                GridLayout.Spec rowSpec = GridLayout.spec(i);     //è®¾ç½®å®ƒçš„è¡Œå’Œåˆ—  
                                 GridLayout.Spec columnSpec = GridLayout.spec(j);
                                 GridLayout.LayoutParams params = new GridLayout.LayoutParams(rowSpec, columnSpec);
                                 params.setGravity(Gravity.LEFT);

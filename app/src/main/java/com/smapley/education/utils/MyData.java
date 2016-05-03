@@ -102,7 +102,7 @@ public class MyData {
     public static int imagechangeed = 0;
 
     /**
-     * »ñÈ¡·şÎñÆ÷¼ÓÃÜÂë
+     * è·å–æœåŠ¡å™¨åŠ å¯†ç 
      * key
      *
      * @return
@@ -110,8 +110,8 @@ public class MyData {
     public static int getKey() {
         int key = 0;
         key = 1 + (int) (Math.random() * 999);
-        Time t = new Time(); // or Time t=new Time("GMT+8"); ¼ÓÉÏTime Zone×ÊÁÏ¡£  
-        t.setToNow(); // È¡µÃÏµÍ³Ê±¼ä¡£ 
+        Time t = new Time(); // or Time t=new Time("GMT+8"); åŠ ä¸ŠTime Zoneèµ„æ–™ã€‚  
+        t.setToNow(); // å–å¾—ç³»ç»Ÿæ—¶é—´ã€‚ 
         int date = t.monthDay;
         return key * 789 * date;
     }

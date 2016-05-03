@@ -12,7 +12,7 @@ public class Exit extends Application {
 	
 	private List<Activity> activityList=new LinkedList<Activity>();
 	private static Exit instance;
-	//µ¥ÀıÄ£Ê½ÖĞ»ñÈ¡Î¨Ò»µÄExitApplication ÊµÀı
+	//å•ä¾‹æ¨¡å¼ä¸­è·å–å”¯ä¸€çš„ExitApplication å®ä¾‹
 	public static Exit getInstance()
 	{
 		if(null == instance)
@@ -23,13 +23,13 @@ public class Exit extends Application {
 
 	}
 	
-	//Ìí¼ÓActivity µ½ÈİÆ÷ÖĞ
+	//æ·»åŠ Activity åˆ°å®¹å™¨ä¸­
 	public void addActivity(Activity activity)
 	{
 		activityList.add(activity);
 	}
 	
-	//±éÀúËùÓĞActivity ²¢finish
+	//éå†æ‰€æœ‰Activity å¹¶finish
 	public void exit()
 	{
 		for(Activity activity:activityList)
@@ -41,13 +41,13 @@ public class Exit extends Application {
 
 	
 	public void exitAlert (AlertDialog.Builder builder){
-		builder.setMessage("È·¶¨ÒªÍË³öSpareTimeÂğ£¿");
-		builder.setPositiveButton("ÊÇ",new DialogInterface.OnClickListener() {
+		builder.setMessage("ç¡®å®šè¦é€€å‡ºSpareTimeå—ï¼Ÿ");
+		builder.setPositiveButton("æ˜¯",new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				Exit.getInstance().exit();
 			}
 		});	
-		builder.setNegativeButton("·ñ",new DialogInterface.OnClickListener() {
+		builder.setNegativeButton("å¦",new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int which) {
 				return;
 			}
@@ -56,11 +56,11 @@ public class Exit extends Application {
 		alert.show();
 	}
 	
-	// ÏÔÊ¾¶Ô»°¿ò
+	// æ˜¾ç¤ºå¯¹è¯æ¡†
 	public void infoAlert(AlertDialog.Builder builder,String msg){
 		builder.setMessage(msg)
 				   .setCancelable(false)
-				       .setPositiveButton("È·¶¨", new DialogInterface.OnClickListener() {
+				       .setPositiveButton("ç¡®å®š", new DialogInterface.OnClickListener() {
 				           public void onClick(DialogInterface dialog, int id) {
 				           }
 				       });

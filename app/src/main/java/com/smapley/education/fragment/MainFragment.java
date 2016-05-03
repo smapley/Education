@@ -44,7 +44,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     private View countView;
     private ListViewFragment listViewFragment;
     /**
-     * ÊÇ·ñÍË³ö
+     * æ˜¯å¦é€€å‡º
      */
     private static Boolean isExit = false;
     private SharedPreferences sp;
@@ -82,7 +82,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         dialog.setMessage(getString(R.string.connect));
         new Thread(new Runnable() {
             /**
-             * 0=¼Ò³¤,1=½ÌÊ¦,2=Ñ§Éú
+             * 0=å®¶é•¿,1=æ•™å¸ˆ,2=å­¦ç”Ÿ
              */
             @Override
             public void run() {

@@ -80,7 +80,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             @Override
             public void afterEvent(int event, int result, Object data) {
                 if (event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE) {
-                    //Ìá½»ÑéÖ¤Âë³É¹¦
+                    //æäº¤éªŒè¯ç æˆåŠŸ
                     if (result == SMSSDK.RESULT_COMPLETE) {
                         new Thread(new Runnable() {
                             @Override
@@ -101,7 +101,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 }
             }
         };
-        SMSSDK.registerEventHandler(eventHandler); //×¢²á¶ÌĞÅ»Øµ÷
+        SMSSDK.registerEventHandler(eventHandler); //æ³¨å†ŒçŸ­ä¿¡å›è°ƒ
     }
 
     private void initView(View view) {
@@ -183,20 +183,20 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
             case R.id.login_testing:
                 dialog = ProgressDialog.show(getActivity(), getString(R.string.tips), getString(R.string.login));
                 phoneString = phone.getText().toString();
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        HashMap<String, Object> map = new HashMap();
-                        map.put("salt", MyData.getKey());
-                        map.put("phone", phoneString);
-                        map.put("utype", User);
-                        String result = HttpUtils.updata(map, MyData.URL_REG);
-                        mHandler.obtainMessage(MSG_RESULT, result).sendToTarget();
-
-                    }
-                }).start();
+//                new Thread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        HashMap<String, Object> map = new HashMap();
+//                        map.put("salt", MyData.getKey());
+//                        map.put("phone", phoneString);
+//                        map.put("utype", User);
+//                        String result = HttpUtils.updata(map, MyData.URL_REG);
+//                        mHandler.obtainMessage(MSG_RESULT, result).sendToTarget();
+//
+//                    }
+//                }).start();
                 //    } else {
-                //    SMSSDK.submitVerificationCode("86", phoneString, key.getText().toString());
+                SMSSDK.submitVerificationCode("86", phoneString, key.getText().toString());
                 //   }
                 break;
         }
@@ -207,7 +207,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
         dialog.setMessage(getString(R.string.connect));
         new Thread(new Runnable() {
             /**
-             * 0=¼Ò³¤,1=½ÌÊ¦,2=Ñ§Éú      
+             * 0=å®¶é•¿,1=æ•™å¸ˆ,2=å­¦ç”Ÿ      
              */
             @Override
             public void run() {
@@ -237,7 +237,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
     }
 
     private Handler mHandler = new Handler() {
-        // ÖØĞ´handleMessage()·½·¨£¬´Ë·½·¨ÔÚUIÏß³ÌÔËĞĞ
+        // é‡å†™handleMessage()æ–¹æ³•ï¼Œæ­¤æ–¹æ³•åœ¨UIçº¿ç¨‹è¿è¡Œ
         @Override
         public void handleMessage(Message msg) {
             try {

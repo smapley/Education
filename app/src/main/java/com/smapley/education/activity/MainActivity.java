@@ -25,7 +25,7 @@ import java.util.TimerTask;
 public class MainActivity extends Activity {
 
     /**
-     * ÊÇ·ñÍË³ö
+     * æ˜¯å¦é€€å‡º
      */
     private static Boolean isExit = false;
     private MainFragment mainFragment;
@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
     }
 
     /*
-         * ¼àÌı·µ»Ø¼ü£¬²Ëµ¥´ò¿ªÊ±£¬°´Ò»´Î¹Ø±Õ²Ëµ¥
+         * ç›‘å¬è¿”å›é”®ï¼Œèœå•æ‰“å¼€æ—¶ï¼ŒæŒ‰ä¸€æ¬¡å…³é—­èœå•
          */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -135,20 +135,20 @@ public class MainActivity extends Activity {
     }
 
     /**
-     * Á½´Î·µ»Ø¼ü£¬ÍË³ö³ÌĞò
+     * ä¸¤æ¬¡è¿”å›é”®ï¼Œé€€å‡ºç¨‹åº
      */
     public void exitBy2Click() {
         Timer tExit = null;
         if (isExit == false) {
-            isExit = true; // ×¼±¸ÍË³ö
+            isExit = true; // å‡†å¤‡é€€å‡º
             Toast.makeText(this, R.string.Exit, Toast.LENGTH_SHORT).show();
             tExit = new Timer();
             tExit.schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    isExit = false; // È¡ÏûÍË³ö
+                    isExit = false; // å–æ¶ˆé€€å‡º
                 }
-            }, 2000); // Èç¹û2ÃëÖÓÄÚÃ»ÓĞ°´ÏÂ·µ»Ø¼ü£¬ÔòÆô¶¯¶¨Ê±Æ÷È¡Ïûµô¸Õ²ÅÖ´ĞĞµÄÈÎÎñ
+            }, 2000); // å¦‚æœ2ç§’é’Ÿå†…æ²¡æœ‰æŒ‰ä¸‹è¿”å›é”®ï¼Œåˆ™å¯åŠ¨å®šæ—¶å™¨å–æ¶ˆæ‰åˆšæ‰æ‰§è¡Œçš„ä»»åŠ¡
 
         } else {
             new Exit();

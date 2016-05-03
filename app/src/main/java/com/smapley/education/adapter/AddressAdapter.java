@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class AddressAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
-    private List<Map<String, Object>> mData;// ´æ´¢µÄEditTextÖµ
+    private List<Map<String, Object>> mData;// å­˜å‚¨çš„EditTextå€¼
     private Context context;
 
     public AddressAdapter(Context context, List<Map<String, Object>> data) {
@@ -57,7 +57,7 @@ public class AddressAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        // convertViewÎªnullµÄÊ±ºò³õÊ¼»¯convertView¡£
+        // convertViewä¸ºnullçš„æ—¶å€™åˆå§‹åŒ–convertViewã€‚
 
 
         if (convertView == null) {

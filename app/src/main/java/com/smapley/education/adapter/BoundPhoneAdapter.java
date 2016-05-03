@@ -29,18 +29,18 @@ public class BoundPhoneAdapter extends BaseAdapter {
 
     private final int Bound = 1;
     /**
-     * µÃµ½Ò»¸öLayoutInfalter¶ÔÏóÓÃÀ´µ¼Èë²¼¾Ö
+     * å¾—åˆ°ä¸€ä¸ªLayoutInfalterå¯¹è±¡ç”¨æ¥å¯¼å…¥å¸ƒå±€
      */
     private LayoutInflater mInflater;
     private Context context;
     /**
-     * listµÄÊı¾İ
+     * listçš„æ•°æ®
      */
     private List<Map> listitem;
     private ProgressDialog dialog;
 
     /**
-     * ¹¹Ôìº¯Êı
+     * æ„é€ å‡½æ•°
      */
     public BoundPhoneAdapter(Context context,
                              List<Map> listitem) {
@@ -55,7 +55,7 @@ public class BoundPhoneAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return listitem.size();// ·µ»ØÊı×éµÄ³¤¶È
+        return listitem.size();// è¿”å›æ•°ç»„çš„é•¿åº¦
 
     }
 

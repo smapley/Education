@@ -117,7 +117,7 @@ public class AddGradefragment extends Fragment {
         }).start();
         for (int i = 0; i < list.size(); i++) {
 
-            System.out.println("the text of " + i + "'s EditText£º----------->" + list.get(i).get("point").toString()
+            System.out.println("the text of " + i + "'s EditTextï¼š----------->" + list.get(i).get("point").toString()
             );
         }
     }

@@ -22,12 +22,12 @@ public class HttpUtils {
 
 
     public static String updata(HashMap<String, Object> map, String urlString) {
-        // ×÷ÎªStringBuffer³õÊ¼»¯µÄ×Ö·û´®
+        // ä½œä¸ºStringBufferåˆå§‹åŒ–çš„å­—ç¬¦ä¸²
         StringBuffer buffer = new StringBuffer();
         try {
             if (map != null && !map.isEmpty()) {
                 for (Map.Entry<String, Object> entry : map.entrySet()) {
-                    // Íê³É×ªÂë²Ù×÷
+                    // å®Œæˆè½¬ç æ“ä½œ
                     buffer.append(entry.getKey())
                             .append("=")
                             .append(URLEncoder.encode(entry.getValue()
@@ -35,27 +35,27 @@ public class HttpUtils {
                 }
                 buffer.deleteCharAt(buffer.length() - 1);
             }
-            Log.i(TAG, "----------------------->connection£º" + urlString);
+            Log.i(TAG, "----------------------->connectionï¼š" + urlString);
             URL url = new URL(urlString);
             HttpURLConnection connection = (HttpURLConnection) url
                     .openConnection();
             connection.setConnectTimeout(3000);
             connection.setRequestMethod("POST");
-            connection.setDoInput(true);// ±íÊ¾´Ó·şÎñÆ÷»ñÈ¡Êı¾İ
-            connection.setDoOutput(true);// ±íÊ¾Ïò·şÎñÆ÷Ğ´Êı¾İ
+            connection.setDoInput(true);// è¡¨ç¤ºä»æœåŠ¡å™¨è·å–æ•°æ®
+            connection.setDoOutput(true);// è¡¨ç¤ºå‘æœåŠ¡å™¨å†™æ•°æ®
             Log.i(TAG, "--------->data:" + buffer.toString());
-            // »ñµÃÉÏ´«ĞÅÏ¢µÄ×Ö½Ú´óĞ¡ÒÔ¼°³¤¶È
+            // è·å¾—ä¸Šä¼ ä¿¡æ¯çš„å­—èŠ‚å¤§å°ä»¥åŠé•¿åº¦
             byte[] mydata = buffer.toString().getBytes();
-            // ±íÊ¾ÉèÖÃÇëÇóÌåµÄÀàĞÍÊÇÎÄ±¾ÀàĞÍ
+            // è¡¨ç¤ºè®¾ç½®è¯·æ±‚ä½“çš„ç±»å‹æ˜¯æ–‡æœ¬ç±»å‹
             connection.setRequestProperty("Content-Type",
                     "application/x-www-form-urlencoded");
             connection.setRequestProperty("Content-Length",
                     String.valueOf(mydata.length));
-            // »ñµÃÊä³öÁ÷,Ïò·şÎñÆ÷Êä³öÊı¾İ
+            // è·å¾—è¾“å‡ºæµ,å‘æœåŠ¡å™¨è¾“å‡ºæ•°æ®
             OutputStream outputStream = connection.getOutputStream();
             outputStream.write(mydata, 0, mydata.length);
             outputStream.close();
-            // »ñµÃ·şÎñÆ÷ÏìÓ¦µÄ½á¹ûºÍ×´Ì¬Âë
+            // è·å¾—æœåŠ¡å™¨å“åº”çš„ç»“æœå’ŒçŠ¶æ€ç 
             int responseCode = connection.getResponseCode();
             Log.i(TAG, "--------->responseCode:" + responseCode);
             if (responseCode == 200) {
@@ -70,7 +70,7 @@ public class HttpUtils {
         return "";
     }
 
-    // ÉÏ´«´úÂë£¬µÚÒ»¸ö²ÎÊı£¬ÎªÒªÊ¹ÓÃµÄURL£¬µÚ¶ş¸ö²ÎÊı£¬Îª±íµ¥ÄÚÈİ£¬µÚÈı¸ö²ÎÊıÎªÒªÉÏ´«µÄÎÄ¼ş£¬¿ÉÒÔÉÏ´«¶à¸öÎÄ¼ş£¬Õâ¸ù¾İĞèÒªÒ³¶¨
+    // ä¸Šä¼ ä»£ç ï¼Œç¬¬ä¸€ä¸ªå‚æ•°ï¼Œä¸ºè¦ä½¿ç”¨çš„URLï¼Œç¬¬äºŒä¸ªå‚æ•°ï¼Œä¸ºè¡¨å•å†…å®¹ï¼Œç¬¬ä¸‰ä¸ªå‚æ•°ä¸ºè¦ä¸Šä¼ çš„æ–‡ä»¶ï¼Œå¯ä»¥ä¸Šä¼ å¤šä¸ªæ–‡ä»¶ï¼Œè¿™æ ¹æ®éœ€è¦é¡µå®š
     public static String post(String actionUrl, Map<String, Object> params, Map<String, Object> files) {
 
         String BOUNDARY = java.util.UUID.randomUUID().toString();
@@ -81,15 +81,15 @@ public class HttpUtils {
             URL uri = new URL(actionUrl);
             HttpURLConnection conn = (HttpURLConnection) uri.openConnection();
             conn.setReadTimeout(5 * 1000);
-            conn.setDoInput(true);// ÔÊĞíÊäÈë
-            conn.setDoOutput(true);// ÔÊĞíÊä³ö
+            conn.setDoInput(true);// å…è®¸è¾“å…¥
+            conn.setDoOutput(true);// å…è®¸è¾“å‡º
             conn.setUseCaches(false);
-            conn.setRequestMethod("POST"); // Post·½Ê½
+            conn.setRequestMethod("POST"); // Postæ–¹å¼
             conn.setRequestProperty("connection", "keep-alive");
             conn.setRequestProperty("Charsert", "UTF-8");
             conn.setRequestProperty("Content-Type", MULTIPART_FROM_DATA
                     + ";boundary=" + BOUNDARY);
-            // Ê×ÏÈ×éÆ´ÎÄ±¾ÀàĞÍµÄ²ÎÊı
+            // é¦–å…ˆç»„æ‹¼æ–‡æœ¬ç±»å‹çš„å‚æ•°
             StringBuilder sb = new StringBuilder();
             for (Map.Entry<String, Object> entry : params.entrySet()) {
                 sb.append(PREFIX);
@@ -106,7 +106,7 @@ public class HttpUtils {
             DataOutputStream outStream = new DataOutputStream(
                     conn.getOutputStream());
             outStream.write(sb.toString().getBytes());
-            // ·¢ËÍÎÄ¼şÊı¾İ
+            // å‘é€æ–‡ä»¶æ•°æ®
             if (files != null)
                 for (Map.Entry<String, Object> file : files.entrySet()) {
                     StringBuilder sb1 = new StringBuilder();
@@ -128,11 +128,11 @@ public class HttpUtils {
                     is.close();
                     outStream.write(LINEND.getBytes());
                 }
-            // ÇëÇó½áÊø±êÖ¾
+            // è¯·æ±‚ç»“æŸæ ‡å¿—
             byte[] end_data = (PREFIX + BOUNDARY + PREFIX + LINEND).getBytes();
             outStream.write(end_data);
             outStream.flush();
-            // »ñµÃ·şÎñÆ÷ÏìÓ¦µÄ½á¹ûºÍ×´Ì¬Âë
+            // è·å¾—æœåŠ¡å™¨å“åº”çš„ç»“æœå’ŒçŠ¶æ€ç 
             int responseCode = conn.getResponseCode();
             Log.i(TAG, "--------->responseCode:" + responseCode);
             if (responseCode == 200) {

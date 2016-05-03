@@ -107,7 +107,7 @@ public class UpPicFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setType("image/*");// 相片类型
+                intent.setType("image/*");// 鐩哥墖绫诲瀷
                 intent.putExtra("scale", true);
                 intent.putExtra("crop", "true");
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
@@ -121,7 +121,7 @@ public class UpPicFragment extends Fragment {
 
                 Bitmap newBitmap = GetPic_inSampleSize.decodeSampledBitmapFromUrl(
                         ImageFileCache.getDirectory() + "uppic.jpg", imageView.getWidth(), imageView.getHeight());
-                // 将处理过的图片显示在界面上，并保存到本地
+                // 灏嗗鐞嗚繃鐨勫浘鐗囨樉绀哄湪鐣岄潰涓婏紝骞朵繚瀛樺埌鏈湴
                 imageView.setImageBitmap(newBitmap);
                 demo.setVisibility(View.GONE);
                 File file = new File(ImageFileCache.getDirectory() + "uppic.jpg");

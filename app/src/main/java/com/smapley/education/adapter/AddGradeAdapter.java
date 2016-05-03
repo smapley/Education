@@ -23,7 +23,7 @@ import java.util.Map;
  */
 public class AddGradeAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
-    private List<Map<String, Object>> mData;// ´æ´¢µÄEditTextÖµ  
+    private List<Map<String, Object>> mData;// å­˜å‚¨çš„EditTextå€¼  
     public Map<String, String> editorValue = new HashMap<String, String>();//  
 
     public AddGradeAdapter(Context context, List<Map<String, Object>> data) {
@@ -32,7 +32,7 @@ public class AddGradeAdapter extends BaseAdapter {
         init();
     }
 
-    // ³õÊ¼»¯  
+    // åˆå§‹åŒ–  
     private void init() {
         editorValue.clear();
     }
@@ -61,7 +61,7 @@ public class AddGradeAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
-        // convertViewÎªnullµÄÊ±ºò³õÊ¼»¯convertView¡£  
+        // convertViewä¸ºnullçš„æ—¶å€™åˆå§‹åŒ–convertViewã€‚  
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = mInflater.inflate(R.layout.layout_addgrade_item, null);
@@ -101,7 +101,7 @@ public class AddGradeAdapter extends BaseAdapter {
                     if (s != null && !"".equals(s.toString())) {
                         int position = (Integer) mHolder.value.getTag();
                         mData.get(position).put("point",
-                                s.toString());// µ±EditTextÊı¾İ·¢Éú¸Ä±äµÄÊ±ºò´æµ½data±äÁ¿ÖĞ  
+                                s.toString());// å½“EditTextæ•°æ®å‘ç”Ÿæ”¹å˜çš„æ—¶å€™å­˜åˆ°dataå˜é‡ä¸­  
                     }
                 }
             }
@@ -131,6 +131,6 @@ public class AddGradeAdapter extends BaseAdapter {
 
     public final class ViewHolder {
         public TextView name;
-        public EditText value;// ListViewÖĞµÄÊäÈë  
+        public EditText value;// ListViewä¸­çš„è¾“å…¥  
     }
 }  
